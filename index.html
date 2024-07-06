@@ -4,27 +4,5 @@
   <!-- ... other scripts -->
 </head>
 <body>
-  <script>
-  var MainButton = WebApp.MainButton;
-  var BackButton = WebApp.BackButton;
-  
-  MainButton.show();
-  BackButton.show();
-  
-  MainButton.onClick(function() {
-    WebApp.showAlert("Хорошо, ты нажал на главную кнопку.");
-  });
-  WebApp.onEvent('mainButtonClicked', function() {
-    /* also */
-  });
-  
-  BackButton.onClick(function() {
-    WebApp.showAlert("Нет пути назад!");
-    
-    BackButton.hide();
-  });
-  WebApp.onEvent('backButtonClicked', function() {
-    /* also */
-  });
-</script>
+  <button img="https://media.licdn.com/dms/image/D4E03AQFhGmMDWR1Zew/profile-displayphoto-shrink_200_200/0/1677933189390?e=2147483647&v=beta&t=aNGTRzSwdZ_SMUywbeRl-wtNR8wSd4yhuIr2V4-SqHw">ТАПАТЬ</button>
 </body>
