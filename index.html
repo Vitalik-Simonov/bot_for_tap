@@ -6,6 +6,8 @@
   <!-- ... other scripts -->
   <script>
     let tg = window.Telegram.WebApp; //получаем объект webapp телеграма 
+    let k = 0;
+    document.getElementById("kk").innerHTML = min;
 
     tg.expand(); //расширяем на все окно  
 
@@ -16,32 +18,13 @@
     tg.MainButton.setParams({"color": "#143F6B"}); //так изменяются все параметры
 
     btn.addEventListener('click', function(){ //вешаем событие на нажатие html-кнопки
-    if (tg.MainButton.isVisible){ //если кнопка показана 
-      tg.MainButton.hide() //скрываем кнопку 
-    }
-    else{ //иначе
-      tg.MainButton.show() //показываем 
-    }
-  });
-    let btnED = document.getElementById("btnED"); //получаем кнопку активировать/деактивировать
-    btnED.addEventListener('click', function(){ //вешаем событие на нажатие html-кнопки
-    if (tg.MainButton.isActive){ //если кнопка показана 
-      tg.MainButton.setParams({"color": "#E0FFFF"}); //меняем цвет
-      tg.MainButton.disable() //скрываем кнопку 
-    }
-    else{ //иначе
-      tg.MainButton.setParams({"color": "#143F6B"}); //меняем цвет
-      tg.MainButton.enable() //показываем 
-    }
-  });
+      k += 1;
+    });
   </script>
 </head>
 <body>
   <div id="usercard"> <!--Карта профиля, человека, который к нам обратился-->
   </div>
-  <p>Just text</p> <!--Просто текст для проверки-->
-  <a class="link" href="https://mihailgok.ru">Link</a> <!--Просто ссылка для проверки-->
-  <p class="hint">Some little hint</p> <!--Просто текст-подсказка для проверки-->
-  <button id="btn" class="button">Show/Hide Main Button</button> <!--Кнопка, чтобы скрыть / показать основную кнопку-->
-  <button id="btnED" class="button">Enable/Disable Main Button</button> <!--Кнопка, чтобы сделать кнопку активной/неактивной-->
+  <h1 id="time">Итог - <div id="kk"></div> </h1> 
+  <button id="btn" img="sad.jpg" class="button"></button> <!--Кнопка, чтобы скрыть / показать основную кнопку-->
 </body>
