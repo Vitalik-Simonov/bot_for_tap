@@ -1,6 +1,6 @@
 body{
-	color: var(--tg-theme-text-color);
-	background: var(--tg-theme-bg-color);
+	color: rgb(255, 255, 255);
+	background: rgb(100, 100, 100);
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -8,16 +8,16 @@ body{
 }
 
 .hint{
-	color: var(--tg-theme-hint-color);
+	color: rgb(0, 100, 0);
 }
 
 .link{
-	color: var(--tg-theme-link-color);
+	color: rgb(0, 0, 255);
 }
 
 .button{
-	background: var(--tg-theme-button-color);
-	color: var(--tg-theme-button-text-color);
+	background: rgb(255, 0, 0);
+	color: rgb(0, 0, 0);
 	border: none;
 	font-size: 18px;
 }
